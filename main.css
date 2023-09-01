@@ -9,25 +9,6 @@
   box-sizing: border-box;
 }
 
-.showcase11{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 40px;
-}
-.logo{
-  margin-left: 30px;
-  font-size: 30px;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-family: 'Belanosima', sans-serif ;
-
-}
-
-.loggo{
-  width: 124PX;
-}
 .overlay{
   width: 100%;
   position: absolute;
@@ -38,30 +19,10 @@
   mix-blend-mode: overlay;
   z-index: -1;
 } 
-.overlay2{
-  width: 100%;
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-color: lightblue;
-  mix-blend-mode: overlay;
-  z-index: -1;
-  display: none;
-} 
-.backvid2{
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  object-fit: cover;
-  height: 100%;
-  left: 0;
-  top: 0;
-  display: none;
-}
+
 .backvid{
   width: 100%;
-  z-index: -2;
+  z-index: -1;
   position: absolute;
   object-fit: cover;
   height: 100%;
@@ -69,73 +30,58 @@
   top: 0;
 }
 
-.discord{
-  border: 5px solid double;
-  width: 500px;
-  height: 500px;
+
+div{
   padding: 20px;
   position: relative;
-  overflow: hidden;
   z-index: 3;
   border-radius: 25px;
+  display: inline-block;
+}
+
+.discord{
+  width: 500px;
+  height: 420px;
   background-image: linear-gradient(180deg,#182e75, #0f1113);
-  
 }
 
 .Tiktok{
   width: 500px;
-  height: 500px;
-  border-radius: 25px;
-  background-color: black;
-  padding: 20px;
-  position: relative;
+  height: 420px;
   background-image: linear-gradient(0deg,#380012, #000000);
-  justify-content: center;
-    display: block;
-    margin: auto;
-    text-align: center;
 }
 
 .Youtube{
   width: 500px;
-  height: 500px;
-  border-radius: 25px;
-  padding: 20px;
-  position: relative;
+  height: 420px;
   background-image: linear-gradient(180deg,#8b0000, #500068);
-  justify-content: center;
-    display: block;
-    margin: auto;
-    text-align: center;
 }
 
 .allelements{
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
   flex-flow: wrap;
+  justify-content: center;
 }
 
 .allelements div{
 margin: 20px;
-display: block;
 }
 
-.discord1{
-  width: 150PX;
-  display: block;
-  margin: auto;
-  
-}
-
-.tiktok1{
-  width: 150PX;
+.discordlogo{
+  width: 125PX;
   display: block;
   margin: auto;
 }
 
-.youtube1{
-  width: 150px;
+.tiktoklogo{
+  width: 125PX;
+  display: block;
+  margin: auto;
+}
+
+.youtubelogo{
+  width: 125px;
   padding: 0;
   display: block;
   margin: auto;
@@ -147,6 +93,44 @@ button{
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  display: block;
+  margin: auto;
+  text-transform: uppercase;
+  transition: 0.2s;
+  font-weight: 1000;
+}
+
+.tikbut{
+  margin-top: 80px;
+  background-color: #ff0050;
+  color: #00f2ea;
+}
+
+.tikbut:hover{
+  background-color: #00f2ea;
+  color: #ff0050;
+}
+
+.disbut{
+  background-color: 	#7289da;
+  margin-top: 50px;
+  color: white;
+}
+
+.disbut:hover{
+  background-color: white;
+  color: #7289da;
+}
+
+.subut{
+  margin-top: 50px;
+  color: #6e0d25;
+  background-color: #40e0d0;
+}
+
+.subut:hover{
+  color: #40e0d0;
+  background-color: #ff0050;
 }
 
 h2{
@@ -157,322 +141,317 @@ h2{
 }
 
 h3{
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-transform: uppercase;
   font-weight: 1000;
   text-align: center;
 }
 
-.tikbut{
-  margin-left: 110px;
-  margin-top: 80px;
-  background-color: #ff0050;
-  color: #00f2ea;
-  font-weight: 1000;
-  text-transform: uppercase;
-  transition: 0.2s;
-}
 
-.tikbut:hover{
-  background-color: #00f2ea;
-  color: #ff0050;
-}
-
-.disbut{
-  margin-left: 100px;
-  background-color: 	#7289da;
-  margin-top: 50px;
-  text-transform: uppercase;
-  font-weight: 1000;
-  color: white;
-  transition: 0.2s;
-}
-
-.disbut:hover{
-  background-color: white;
-  color: #7289da;
-}
-
-.subut{
-  margin-left: 100px;
-  margin-top: 50px;
-  font-weight: 1000;
-  text-transform: uppercase;
-  color: #6e0d25;
-  background-color: #40e0d0;
-  transition: 0.2s;
-}
-
-.subut:hover{
-  color: #40e0d0;
-  background-color: #ff0050;
-}
-
-@media (max-width: 1440px){
-  .Tiktok{
-    width: 400px;
-    height: 500px;
-}
-.Youtube{
-  width: 400px;
-    height: 500px;
-}
-.discord{
-  width: 400px;
-    height: 500px;
-}
-.tikbut{
-  margin-left: 0px;
-}
-.disbut{
-  margin-left: 0px;
-}
-.subut{
-  margin-left: 0px;
-  margin-top: 10px;
-}
-.allelements div button{
-  border-radius: 30px;
-  padding: 20px 60px;
-}
-.Youtube{
-  justify-content: center;
-  display: block;
-  margin: auto;
-  text-align: center;
-}
-.discord{
-  justify-content: center;
-  display: block;
-  margin: auto;
-  text-align: center;
-}
-.Tiktok{
-  justify-content: center;
-  display: block;
-  margin: auto;
-  text-align: center;
-}
-}
-@media (min-width: 2560px){
-  body{
-    padding: 200px;
+@media (max-width:2560px){
+  .discord{
+    width: 700px;
+    height: 690px;
   }
-  .allelements div{
-    width: 30%;
-    height: 700px;
-  }
-  .allelements div h2{
-    font-size: 3em;
-  }
-  .allelements div h3{
-    font-size: 1.8em;
-  }
-  .allelements div button{
-    padding: 35px 70px;
-    font-size: 1.8em;
-    border-radius: 60px;
-  }
-  .disbut{
-    margin-left: 0px;
-    margin-top: 100px;
-  }
-  .logo{
+  h2{
     font-size: 4em;
   }
-  .loggo{
-    width: 224PX
-  }
-  .subut{
-    margin-left: 0px;
-    margin-top: 30px;
-  }
-  .tikbut{
-    margin-top: 135px;
-    margin-left: 0px;
+  
+  h3{
+    font-size: 2.2em;
   }
   .Youtube{
-    justify-content: center;
-    display: block;
-    margin: auto;
-    text-align: center;
-  }
-  .discord{
-    justify-content: center;
-    display: block;
-    margin: auto;
-    text-align: center;
+    width: 700px;
+    height: 690px;
   }
   .Tiktok{
-    justify-content: center;
-    display: block;
-    margin: auto;
-    text-align: center;
+    width: 700px;
+    height: 690px;
   }
-}
-@media (max-width: 1024px){
-  .allelements div{
-    width: 29%;
-    height: 450px;
+  button{
+    padding: 35px 70px;
+    border-radius: 100px;
+    font-size: 1.4em;
   }
-  .allelements div h2{
-    font-size: 1em;
-    margin-bottom: 10px;
+  .discordlogo{
+    width: 180px;
   }
-  .allelements div h3{
-    font-size: 0.9em;
+  .tiktoklogo{
+    width: 180px;
   }
-  .allelements div button{
-    padding: 20px 30px;
-    font-size: 0.9em;
-    border-radius: 30px;
+  .youtubelogo{
+    width: 150px;
   }
-  .tikbut{
-    margin-left: 0px;
   }
-  .disbut{
-    margin-left: 0px;
-    margin-top: 40px;
-  }
-  .subut{
-    margin-left: 0px;
-    margin-top: 60px;
-  }
+  @media (max-width:2558px){
+    .discord{
+      width: 400px;
+      height: 430px;
+    }
+    h2{
+      font-size: 2em;
+    }
+    
+    h3{
+      font-size: 1em;
+    }
     .Youtube{
-    justify-content: center;
-    display: block;
-    margin: auto;
-    text-align: center;
+      width: 400px;
+      height: 430px;
+    }
+    .Tiktok{
+      width: 400px;
+      height: 430px;
+    }
+    button{
+      padding: 15px 50px;
+      border-radius: 100px;
+      font-size: 1em;
+    }
+    .discordlogo{
+      width: 150px;
+    }
+    .tiktoklogo{
+      width: 150px;
+    }
+    .youtubelogo{
+      width: 125px;
+    }
   }
-  .discord{
-    justify-content: center;
-    display: block;
-    margin: auto;
-    text-align: center;
-  }
-  .Tiktok{
-    justify-content: center;
-    display: block;
-    margin: auto;
-    text-align: center;
-  }
-}
-@media (max-width: 768px){
-  .allelements div{
-    width: 44%;
-    height: 280px;
-  }
-  .allelements div h2{
-    font-size: 0.9em;
-    margin-bottom: 10px;
-  }
-  .allelements div h3{
-    font-size: 0.7em;
-  }
-  .allelements div button{
-    padding: 15px 35px;
-    font-size: 0.9em;
-    border-radius: 30px;
-  }
-  .tikbut{
-    margin-top: 15px;
-    margin-left: 0px;
-  }
-  .disbut{
-    margin-top: 10px;
-  }
-  .subut{
-    margin-top: 15px;
-  }
-  .tiktok1, .discord1, .youtube1{
-    width: 100px;
+ 
+  @media (max-width:1359px){
+  
+    .discord{
+      width: 360px;
+      height: 345px;
+    }
+  
+    h2{
+      font-size: 1.5em;
+    }
+    
+    h3{
+      font-size: 1em;
+    }
+  
+    .Youtube{
+      width: 360px;
+      height: 345px;
+    }
+  
+    .Tiktok{
+      width: 360px;
+      height: 345px;
+    }
+  
+    button{
+      padding: 10px 45px;
+      border-radius: 100px;
+      font-size: 1em;
+    }
+  
+    .discordlogo{
+      width: 100px;
+    }
+  
+    .tiktoklogo{
+      width: 100px;
+    }
+  
+    .youtubelogo{
+      width: 100px;
+    }
+    .subut{
+      margin-top: 15px;
+    }
+    .disbut{
+      margin-top: 15px;
+    }
+    .tikbut{
+      margin-top: 40px;
+    }
   }
   
+  @media (max-width:839px){
+  
+    .allelements .Tiktok{
+        margin-top: 0px;
+    }
+    .allelements .Youtube{
+      margin-top: 0px;
+    }
+    .allelements .discord{
+    margin-top: 0px;
+    }
+      .discord{
+        width: 300px;
+        height: 300px;
+      }
+    
+      h2{
+        font-size: 1em;
+      }
+      
+      h3{
+        font-size: 0.8em;
+      }
+    
+      .Youtube{
+        width: 300px;
+        height: 300px;
+      }
+    
+      .Tiktok{
+        width: 300px;
+        height: 300px;
+      }
+    
+      button{
+        padding: 10px 25px;
+        border-radius: 100px;
+        font-size: 1em;
+      }
+    
+      .discordlogo{
+        width: 80px;
+      }
+    
+      .tiktoklogo{
+        width: 80px;
+      }
+    
+      .youtubelogo{
+        width: 100px;
+      }
+      .subut{
+        margin-top: 15px;
+      }
+      .disbut{
+        margin-top: 15px;
+      }
+      .tikbut{
+        margin-top: 40px;
+      }
+    }
+
+    @media (max-width:719px){
+  
+      .discord{
+        width: 310px;
+        height: 250px;
+      }
+    
+      h2{
+        font-size: 1em;
+      }
+      
+      h3{
+        font-size: 0.8em;
+      }
+    
+      .Youtube{
+        width: 310px;
+        height: 250px;
+      }
+    
+      .Tiktok{
+        width: 310px;
+        height: 230px;
+      }
+      .allelements .Tiktok{
+          margin-top: 10px;
+      }
+      .allelements .Youtube{
+        margin-top: 10px;
+    }
+    .allelements .discord{
+      margin-top: -35px;
+    }
+      button{
+        padding: 10px 25px;
+        border-radius: 100px;
+        font-size: 0.7em;
+      }
+    
+      .discordlogo{
+        width: 80px;
+      }
+    
+      .tiktoklogo{
+        width: 80px;
+      }
+    
+      .youtubelogo{
+        width: 100px;
+      }
+      .subut{
+        margin-top: 5px;
+      }
+      .disbut{
+        margin-top: 5px;
+      }
+      .tikbut{
+        margin-top: 5px;
+      }
+    }
+    
+@media (max-width:354px){
+
   .discord{
-    justify-content: center;
-    display: block;
-    margin: auto;
-    text-align: center;
+    width: 320px;
+    height: 250px;
   }
+
+  h2{
+    font-size: 0.8em;
+  }
+  
+  h3{
+    font-size: 0.6em;
+  }
+
+  .Youtube{
+    width: 310px;
+    height: 250px;
+  }
+
   .Tiktok{
-    justify-content: center;
-    display: block;
-    margin: auto;
-    text-align: center;
+    width: 310px;
+    height: 230px;
   }
+  .allelements .Tiktok{
+      margin-top: 10px;
+  }
+  .allelements .Youtube{
+    margin-top: 10px;
 }
-@media (max-width: 425px){
-  .allelements div{
-    width: 80%;
-    margin-top: -10px;
-    margin-left: 10%;
-  }
-  .backvid2{
-    display: block;
-    top: 220px;
-    z-index: -1;
-  }
-  .overlay2{
-    display: block;
-    z-index: -1;
-    top: 220px;
-  }
-  .logo{
-    font-size: 2em;
-    margin: 0;
-    margin-top: 0;
-  }
-  .loggo{
-    width: 100px;
-  }
+.allelements .discord{
+  margin-top: -30px;
 }
-@media (max-width: 375px){
-  .loggo{
+  button{
+    padding: 10px 25px;
+    border-radius: 100px;
+    font-size: 0.6em;
+  }
+
+  .discordlogo{
     width: 80px;
   }
-  .logo{
-    font-size: 1.7em;
-    margin: 0;
-    margin-top: 0;
+
+  .tiktoklogo{
+    width: 80px;
   }
-}
-@media (max-width: 375px){
-  .loggo{
-    width: 60px;
+
+  .youtubelogo{
+    width: 100px;
   }
-  .logo{
-    font-size: 1.2em;
-    margin: 0;
-    margin-top: 0;
+  .subut{
+    margin-top: 15px;
   }
-  .allelements div{
-    width: 90%;
-    margin-top: -10px;
-    margin-left: 10%;
-    height: 300px;
+  .disbut{
+    margin-top: 15px;
   }
-  .allelements div button{
-    font-size: 0.8em;
-    margin-top: 20px;
-  }
-}
-@media (max-width: 320px){
-  .loggo{
-    width: 60px;
-  }
-  .logo{
-    font-size: 1.2em;
-    margin: 0;
-    margin-top: 0;
-  }
-  .allelements div{
-    width: 90%;
-    margin-top: -10px;
-    margin-left: 10%;
-    height: 300px;
-  }
-  .allelements div button{
-    font-size: 0.7em;
-    margin-top: 20px;
+  .tikbut{
+    margin-top: 15px;
   }
 }
